@@ -1,0 +1,169 @@
+.faixa-previa {
+  position: relative;
+  z-index: 51;
+  margin: 0;
+  padding: 5px 12px;
+  background: var(--creme-2);
+  color: var(--oliva-escuro);
+  text-align: center;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.topo .acoes {
+  gap: 4px;
+}
+
+.topo .pilula {
+  gap: 7px;
+  min-height: 44px;
+}
+
+.topo .botao-sacola-previa .contador {
+  min-width: 21px;
+  height: 21px;
+  padding-inline: 5px;
+}
+
+.etapa-previa {
+  max-width: 780px;
+  margin-inline: auto;
+}
+
+.etapa-previa h1 {
+  margin-bottom: 12px;
+}
+
+.etapa-selo {
+  margin: 0 0 8px;
+  color: var(--oliva);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.etapa-intro {
+  max-width: 62ch;
+  color: var(--texto-suave);
+}
+
+.etapa-passos {
+  display: grid;
+  gap: 10px;
+  margin: 26px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.etapa-passos li {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 15px 18px;
+  border: 1px solid var(--borda);
+  border-radius: 18px;
+  background: var(--cartao);
+}
+
+.etapa-passos li > span {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--creme-2);
+  color: var(--oliva-escuro);
+  font-weight: 800;
+}
+
+.etapa-passos .etapa-concluida > span,
+.etapa-passos .etapa-atual > span {
+  background: var(--oliva);
+  color: white;
+}
+
+.etapa-passos strong,
+.etapa-passos small {
+  display: block;
+}
+
+.etapa-passos small {
+  margin-top: 2px;
+  color: var(--texto-suave);
+  font-size: 0.88rem;
+}
+
+.etapa-aviso {
+  padding: 14px 16px;
+  border-left: 4px solid var(--damasco);
+  border-radius: 8px 16px 16px 8px;
+  background: #fbf1d3;
+  color: #5c4a12;
+}
+
+.etapa-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+@media (max-width: 520px) {
+  .topo .identidade-fazendeiro,
+  .topo .rotulo-previa,
+  .topo .seta-baixo {
+    display: none;
+  }
+
+  .topo .pilula {
+    width: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .faixa-previa {
+    font-size: 0.68rem;
+  }
+
+  .topo .container {
+    gap: 6px;
+    padding-inline: 10px;
+  }
+
+  .topo .identidade-logo {
+    width: 82px;
+    height: 34px;
+  }
+
+  .topo .botao-sacola-previa {
+    position: relative;
+  }
+
+  .topo .botao-sacola-previa .contador {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    min-width: 17px;
+    height: 17px;
+    padding: 0 3px;
+    font-size: 0.68rem;
+  }
+
+  .etapa-passos li {
+    padding-inline: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .etapa-passos li {
+    scroll-behavior: auto;
+  }
+}

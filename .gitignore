@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.log
+.playwright-cli/
+output/playwright/

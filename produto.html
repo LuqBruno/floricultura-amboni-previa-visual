@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="assets/identidade/logo-amboni.svg" type="image/svg+xml">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produto · Floricultura Amboni</title>
+  <meta name="theme-color" content="#FBF6EC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <script src="js/cedo.js"></script>
+  <link rel="stylesheet" href="css/estilo.css?v=15">
+  <script type="module" src="js/app-preview.js?v=1"></script>
+</head>
+<body data-pagina="produto" data-cabecalho="solido">
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <div id="topo-site"></div>
+
+  <main id="conteudo" class="pagina-produto" tabindex="-1">
+    <div class="container">
+      <nav class="migalhas" aria-label="Você está em">
+        <a href="index.html#fileiras">Categorias</a> / <a id="migalha-categoria-link" href="index.html#fileiras"></a> / <span id="migalha-produto"></span>
+      </nav>
+
+      <p class="estado" id="produto-carregando">Carregando produto…</p>
+      <div id="produto-erro" hidden></div>
+
+      <article class="produto" id="produto" hidden>
+        <div class="produto-galeria">
+          <div class="produto-foto" id="produto-foto"></div>
+        </div>
+        <div class="produto-info">
+          <p class="produto-cabeca">
+            <span class="etiqueta etiqueta-escura" id="produto-categoria"></span>
+            <span class="etiqueta etiqueta-escura" id="produto-exemplo" hidden>Exemplo</span>
+          </p>
+          <h1 id="produto-nome"></h1>
+          <p class="produto-preco" id="produto-preco" aria-live="polite"></p>
+          <p class="produto-estoque" id="produto-estoque" role="status"></p>
+          <p class="produto-preparo" id="produto-preparo" hidden></p>
+          <p class="produto-descricao" id="produto-descricao"></p>
+
+          <div id="produto-opcoes"></div>
+
+          <div class="quantidade-bloco" id="produto-quantidade">
+            <p class="opcao-titulo">Quantidade</p>
+            <div class="quantidade">
+              <button class="quantidade-botao" id="quantidade-menos" type="button" aria-label="Diminuir a quantidade">−</button>
+              <output class="quantidade-valor" id="quantidade-valor" aria-live="polite">1</output>
+              <button class="quantidade-botao" id="quantidade-mais" type="button" aria-label="Aumentar a quantidade">+</button>
+            </div>
+          </div>
+
+          <p class="produto-na-sacola" id="produto-na-sacola" hidden></p>
+          <div class="produto-acoes">
+            <button class="botao botao-cheio magnetico" id="produto-adicionar" type="button">Adicionar à sacola</button>
+            <a class="botao botao-claro" href="sacola.html">Ver sacola</a>
+          </div>
+          <p class="ajuda">Esta é uma prévia visual, sem pedido ou pagamento. <a href="checkout.html">Ver a próxima etapa</a></p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div id="rodape-site"></div>
+</body>
+</html>
